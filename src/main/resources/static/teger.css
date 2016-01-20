@@ -1,0 +1,40 @@
+#obelometer {
+    background-color: white;
+}
+
+.obelometer-display{
+  margin-top: 200px;
+}
+
+.location-display{
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+
+.temp-display{
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 10em;
+}
+
+.deg-display{
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 10em;
+}
+
+
+.time-display{
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}

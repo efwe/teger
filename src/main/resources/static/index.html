@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obelometer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="teger.css"/>
+    <link type="text/css" rel="stylesheet" href="webjars/materialize/0.97.3/dist/css/materialize.min.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body onload="var teger = new Teger();">
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col s12 m5">
+                <canvas id="obelometer" width="500" height="700"></canvas>
+            </div>
+            <div class="col s12 m7">
+                <div class="obelometer-display">
+                    <h2 class="center light-blue-text"><i class="large material-icons">announcement</i>Office Temperature</h2>
+                    <span id="temp-display" class="temp-display"></span>
+                    <span id="deg-display" class="deg-display">&deg;</span>
+                    <span id="time-display" class="time-display"></span>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="icon-block">
+                    <h2 class="light-blue-text"><i class="large material-icons">announcement</i>Outside Temperature</h2>
+                    <span id="outside-temperature" class="temp-display"></span><span class="deg-display">&deg;</span>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h5 class="center light-blue-text"><i class="medium material-icons">info_outline</i>What you see</h5>
+                    <p class="light">You see the temperatures of two thermometers which push their values with
+                        <a href="https://bitbucket.org/efwe/cimon">cimon</a> to the <a href="https://github.com/efwe/teger">teger</a> application
+                    which also provides this page.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+</div>
+
+<script src="webjars/jquery/2.2.0/jquery.min.js"></script>
+<script src="webjars/materialize/0.97.3/dist/js/materialize.min.js"></script>
+<script src="obelisk.min.js"></script>
+<script src="obelometer.js"></script>
+<script src="teger.js"></script>
+<script src="//cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</body>
+</html>
