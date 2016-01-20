@@ -54,6 +54,9 @@ The following lines are the glue code.
 
 This listens on the input-channel where we routed our MQTT messages to and sends those messages to the websocket-topic via the messaging-template utilizing the simple-broker which handles all the websocket-integration.
 
+#Event Source
+If you really want to try this application and you want to have a simple event-source you can checkout the [__cimon__](https://bitbucket.org/efwe/cimon) application.
+
 #Open Ends
 This naïve approach just worked. With the abstraction of spring-integration one can easily route any incoming message to websocket
 listeners. What currently is missing:
